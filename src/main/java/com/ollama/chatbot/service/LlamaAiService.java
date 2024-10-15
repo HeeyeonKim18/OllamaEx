@@ -1,4 +1,8 @@
 package com.ollama.chatbot.service;
 
-public class LlamaAiService {
+import com.ollama.chatbot.response.LlamaResponse;
+
+public interface LlamaAiService {
+
+    LlamaResponse generateMessage(String prompt);
 }
